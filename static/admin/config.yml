@@ -1,6 +1,7 @@
 backend:
   name: github
   branch: master
+  repo: Moments-by-Lori-Fiverr
 
 media_folder: static/assets
 public_folder: /assets
