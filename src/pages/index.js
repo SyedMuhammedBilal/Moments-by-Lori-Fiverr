@@ -11,21 +11,26 @@ export default function Home() {
           description
           title
           type
+          picture
         }
       }
     }
   }
 }
   `)
+  console.log(data)
   return (
     <div>
       {
         data.allMarkdownRemark.edges.map((edge) => {
           return(
-            <h1>{edge.node.frontmatter.title}</h1>
+            <div>
+              <h1>{edge.node.frontmatter.title}</h1>
+              <img src={edge.node.frontmatter.picture} />
+            </div>
           )
         })
       }
     </div>
   )
-}
+};
