@@ -14,5 +14,5 @@ collections:
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Picture", name: "picture", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}

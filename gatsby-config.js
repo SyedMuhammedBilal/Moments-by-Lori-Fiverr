@@ -1,7 +1,6 @@
 module.exports = {
   plugins: [
     `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-remark`,
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -9,5 +8,11 @@ module.exports = {
         name: "blogs",
       },
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        excerpt_separator: `<!-- photography -->`
+      }
+    }
   ],
 }
