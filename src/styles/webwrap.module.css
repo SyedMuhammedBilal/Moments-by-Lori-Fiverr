@@ -1,0 +1,335 @@
+.container {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* center content boxes  */
+  .contentBoxes {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 195px 195px 195px;
+    justify-content: center;
+    /* padding: 100px; */
+    margin-top: 7%;
+    margin-left: 35%;
+  }
+  
+  .box {
+    
+    position: relative;
+  }
+  
+  .img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .centered {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: transparent;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .centered h3 {
+      background: transparent;
+  }
+
+  .centered span {
+      display: inline;
+      background-color: black;
+  }
+  
+  /* side bar  */
+  
+  /* media query for resposiveness */
+  
+  @media only screen and (max-width: 300px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+  
+    .container {
+      display: grid;
+      grid-template-rows: 1fr;
+    }
+  
+    /* center content boxes  */
+    .contentBoxes {
+      display: grid;
+      margin-top: 10%;
+      grid-template-columns: 120px;
+      justify-content: center;
+      grid-gap: 2rem;
+      margin-top: 30%;
+      margin-left: 0%;
+    }
+    .box {
+
+      
+      height: 60px;
+    }
+  
+    .img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    /* side bar  */
+  
+    .sideBar {
+      position: fixed;
+      display: flex !important;
+      flex-direction: row !important;
+      background-color: black;
+      width: 100%;
+      height: 3%;
+      margin: 0%;
+      margin-left: 0%;
+    }
+    .semiSideBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      max-height: 17%;
+      width: 13%;
+      margin: 0%;
+      margin-top: 0%;
+      background-color: transparent;
+    }
+    .navlist {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent !important;
+      width: 60%;
+      height: 10%;
+      margin: 0%;
+      margin-left: 3%;
+      margin-top: 2.5%;
+    }
+    .list {
+      background-color: transparent !important;
+      color: white;
+  
+      margin-left: 7%;
+      padding: 0%;
+      text-decoration: none;
+      font-size: 12px;
+    }
+  
+    .socialMedia {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent !important;
+      width: 50%;
+      height: 3% !important;
+      margin: 0%;
+      margin-left: 62%;
+      margin-top: 1.5%;
+    }
+    .icon {
+    }
+  }
+  @media only screen and (min-width: 300px) and (max-width: 500px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+  
+    .container {
+      display: grid;
+      grid-template-rows: 1fr;
+    }
+  
+    /* center content boxes  */
+    .contentBoxes {
+      display: grid;
+      margin-top: 10%;
+      grid-template-columns: 140px 140px;
+      justify-content: center;
+      grid-gap: 1rem;
+      margin-top: 20%;
+      margin-left: 0%;
+    }
+    .box {
+      
+    }
+  
+    .img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    /* side bar  */
+  
+    .sideBar {
+      position: fixed;
+      display: flex !important;
+      flex-direction: row !important;
+      background-color: black;
+      width: 100%;
+      height: 5%;
+      margin: 0%;
+      margin-left: 0%;
+    }
+    .semiSideBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      max-height: 15%;
+      width: 15%;
+      margin: 0%;
+      margin-top: 0%;
+      background-color: transparent;
+    }
+    .navlist {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent !important;
+      width: 60%;
+      height: 10%;
+      margin: 0%;
+      margin-left: 10%;
+      margin-top: 3%;
+    }
+    .list {
+      background-color: transparent !important;
+      color: white;
+  
+      margin-left: 4%;
+      padding: 0%;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+    .socialMedia {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent !important;
+      width: 60%;
+      height: 3% !important;
+      margin: 0%;
+      margin-left: 60%;
+      margin-top: 2.5%;
+    }
+    .icon {
+      height: 70% !important;
+    }
+    .centered h3 {
+        background: transparent;
+        font-size: 11px;
+    }
+  
+    .centered span {
+        display: inline;
+        background-color: black;
+        font-size: 11px;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+  
+    .container {
+      display: grid;
+      grid-template-rows: 1fr;
+    }
+  
+    /* center content boxes  */
+    .contentBoxes {
+      display: grid;
+      margin-top: 10%;
+      grid-template-rows: 140px 140px 140px;
+      justify-content: center;
+      grid-gap: 1rem;
+      margin-top: 15%;
+      margin-left: 0%;
+    }
+    .box {
+      
+    }
+  
+    .img {
+      height: 100%;
+      width: 100%;
+    }
+  
+    /* side bar  */
+  
+    .sideBar {
+      position: fixed;
+      display: flex !important;
+      flex-direction: row !important;
+      background-color: black;
+      width: 100%;
+      height: 7%;
+      min-width: 8%;
+      margin: 0%;
+      margin-left: 0%;
+    }
+    .semiSideBar {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .logo {
+      max-height: 17%;
+      width: 13%;
+      margin: 0%;
+      margin-top: 0%;
+      background-color: transparent;
+    }
+    .navlist {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent !important;
+      width: 60%;
+      height: 10%;
+      margin: 0%;
+      margin-left: 20%;
+      margin-top: 2.5%;
+    }
+    .list {
+      background-color: transparent !important;
+      color: white;
+  
+      margin-left: 4%;
+      padding: 0%;
+      text-decoration: none;
+      font-size: 17px;
+    }
+  
+    .socialMedia {
+      display: flex;
+      flex-direction: row;
+      background-color: transparent !important;
+      width: 60%;
+      height: 3.5% !important;
+      margin: 0%;
+      margin-left: 62%;
+      margin-top: 2.5%;
+    }
+    .icon {
+      height: 70% !important;
+    }
+    
+      .centered h3 {
+          background: transparent;
+          font-size: 14px;
+      }
+    
+      .centered span {
+          display: inline;
+          background-color: black;
+      }
+  }
