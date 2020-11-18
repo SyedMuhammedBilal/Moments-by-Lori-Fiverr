@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-function index() {
+export default function Home() {
   const data = useStaticQuery(graphql`
     query MyQuery {
   allMarkdownRemark {
@@ -19,16 +19,14 @@ function index() {
   `)
   return (
     <div>
-      {data.allMarkdownRemark.edges.node.map((edge) => {
+      {data.allMarkdownRemark.edges.map((edge) => {
         return (
           <div>
-            <img src={edge.frontmatter.picture} />
-            <h1> {edge.frontmatter.title} </h1>
+            <img src={edge.node.frontmatter.picture} />
+            <h1> {edge.node.frontmatter.title} </h1>
           </div>
         )
       })}
     </div>
   )
 }
-
-export default index
