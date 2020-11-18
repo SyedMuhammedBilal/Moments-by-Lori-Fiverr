@@ -1,0 +1,277 @@
+
+
+.sideBar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 36vh;
+    height: 100vh;
+    margin-left: 7%;
+}
+
+.Logo {
+  background-color: black;
+  height: 170px;
+  margin-top: 10%;
+}
+
+.navlist {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
+.list {
+  background-color: black;
+  color: white;
+  margin: 2%;
+  font-size: 20px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.socialMedia {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 50%;
+  background-color: black;
+}
+.icon {
+  background-color: black;
+  color: white;
+  margin: 1%;
+}
+
+/* media query for mobiles screen */
+
+@media only screen and (max-width: 300px) {
+  .sideBar {
+    position: fixed;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: black;
+    width: 100%;
+    height: 3.5%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+
+  .Logo {
+    height: 100%;
+    width: 10%;
+    margin: 0%;
+    margin-top: 0%;
+    background-color: transparent;
+  }
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent !important;
+    width: 60%;
+    height: 10%;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 2%;
+    margin-right: 10% !important;
+  }
+  .list {
+    background-color: transparent !important;
+    color: white;
+
+    padding: 0%;
+    text-decoration: none;
+    font-size: 7px;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    height: 65%;
+    margin-top: 0% !important;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .icon {
+    background-color: black;
+    color: white;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0% !important;
+  }
+}
+@media only screen and (min-width: 300px) and (max-width: 500px) {
+  .sideBar {
+    position: relative;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: black;
+    width: 100%;
+    height: 3.5%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+
+  .Logo {
+    height: 100%;
+    width: 10%;
+    margin: 0%;
+    margin-top: 0%;
+    background-color: transparent;
+  }
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent !important;
+    width: 75%;
+    height: 10%;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 0.5%;
+    margin-right: 10% !important;
+  }
+  .list {
+    background-color: transparent !important;
+    color: white;
+
+    padding: 0%;
+    text-decoration: none;
+    font-size: 8px;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    height: 65%;
+    margin-top: 1.5% !important;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .icon {
+    background-color: black;
+    color: white;
+    width: 10px !important;
+    height: 10px !important;
+    margin: 0% !important;
+  }
+}
+@media (min-width: 500px) and (max-width: 800px) {
+  .sideBar {
+    position: fixed;
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: black;
+    width: 100%;
+    height: 4%;
+    margin: 0%;
+    margin-left: 0%;
+  }
+
+  .Logo {
+    height: 100%;
+    width: 10%;
+    margin: 0%;
+    margin-top: 0%;
+    background-color: transparent;
+  }
+  .navlist {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent !important;
+    width: 60%;
+    height: 10%;
+    margin: 0%;
+    justify-content: center;
+    margin-top: 0%;
+  }
+  .list {
+    background-color: transparent !important;
+    color: white;
+
+    padding: 0%;
+    text-decoration: none;
+    font-size: 11px;
+  }
+
+  .socialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    height: 65%;
+    margin-top: 0.5% !important;
+    margin-left: 8%;
+    margin-right: 0%;
+  }
+  .icon {
+    background-color: black;
+    color: white;
+    width: 13px !important;
+    height: 13px !important;
+    margin: 2% !important;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 1050px) {
+    .sideBar {
+      position: fixed;
+      display: flex !important;
+      flex-direction: row !important;
+      background-color: black;
+      width: 100%;
+      height: 10%;
+      margin: 0%;
+      margin-left: 0%;
+    }
+  
+    .Logo {
+      height: 100%;
+      width: 15%;
+      margin: 0%;
+      margin-top: 0%;
+      background-color: transparent;
+    }
+    .navlist {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: transparent !important;
+      width: 60%;
+      height: 10%;
+      margin: 0%;
+      justify-content: center;
+      margin-top: 1%;
+    }
+    .list {
+      background-color: transparent !important;
+      color: white;
+  
+      padding: 0%;
+      text-decoration: none;
+      font-size: 20px;
+    }
+  
+    .socialMedia {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      background-color: black;
+      height: 65%;
+      margin-top: 0.5% !important;
+      margin-left: 4%;
+      margin-right: 0%;
+    }
+    .icon {
+      background-color: black;
+      color: white;
+      width: 20px !important;
+      height: 25px !important;
+      margin: 3% !important;
+    }
+  }

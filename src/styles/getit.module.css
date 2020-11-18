@@ -1,0 +1,538 @@
+.getCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .centerCont {
+    margin-top: 12%;
+    margin-left: 15%;
+    justify-content: center;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .extensionCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .img {
+    background-color: rgb(44, 50, 100);
+    width: 19%;
+    height: 80%;
+  }
+  .extensionCont h1 {
+    color: white;
+  
+    /* font-size: 16px; */
+  }
+  
+  .starter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    width: 30%;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .buttoncont {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .but {
+    background-color: #4caf50; /* Green */
+    border: none;
+    color: white;
+    /* padding: 20px 60px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    margin: 2%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hr {
+    width: 52%;
+    margin-left: 27%;
+  }
+  
+  .end {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .secondpoint {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 50%;
+  }
+  
+  .imgsec {
+    height: 100%;
+    width: 60%;
+  }
+  
+  .secondpoint p {
+    color: white;
+    width: 60%;
+    text-align: center;
+    font-size: 13px;
+  }
+  
+  .image {
+    width: 20%;
+    height: 60%;
+    margin-top: 4.5%;
+  }
+  
+  /* media queries */
+  
+  @media only screen and (max-width: 300px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+    .getCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .centerCont {
+      margin-top: 20%;
+      margin-left: 0%;
+      justify-content: center;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .extensionCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .img {
+      background-color: rgb(44, 50, 100);
+      width: 30%;
+      height: 70%;
+      margin-top: 5%;
+    }
+    .extensionCont h1 {
+      color: white;
+  
+      /* font-size: 16px; */
+    }
+  
+    .starter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-left: 0%;
+      margin-bottom: 0%;
+      width: 40%;
+      font-size: 10px;
+      color: white;
+    }
+  
+    .buttoncont {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .but {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      /* padding: 20px 60px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 9px;
+      margin: 2%;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .hr {
+      margin-top: 5%;
+      width: 72%;
+      margin-left: 16%;
+    }
+  
+    .end {
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center;
+    }
+    .secondpoint {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      height: 30%;
+      margin-left: 7%;
+    }
+  
+    .imgsec {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .secondpoint p {
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .image {
+      width: 40%;
+      height: 35%;
+      margin-top: 20%;
+      margin-left: 7%;
+    }
+  }
+  @media only screen and (min-width: 300px) and (max-width: 500px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+    .getCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .centerCont {
+      margin-top: 20%;
+      margin-left: 0%;
+      justify-content: center;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .extensionCont {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    .img {
+      background-color: rgb(44, 50, 100);
+      width: 30%;
+      height: 70%;
+      margin-top: 5%;
+    }
+    .extensionCont h1 {
+      color: white;
+  
+      font-size: 18px;
+    }
+  
+    .starter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-left: 0%;
+      margin-bottom: 0%;
+      width: 40%;
+      font-size: 10px;
+      color: white;
+    }
+  
+    .buttoncont {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .but {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      /* padding: 20px 60px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 9px;
+      margin: 2%;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .hr {
+      margin-top: 5%;
+      width: 72%;
+      margin-left: 16%;
+    }
+  
+    .end {
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center;
+      margin-right: 13px;
+    }
+    .secondpoint {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      height: 30%;
+      margin-left: 7%;
+    }
+  
+    .imgsec {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .secondpoint p {
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .image {
+      width: 40%;
+      height: 35%;
+      margin-top: 10%;
+      margin-left: 7%;
+    }
+  }
+  @media (min-width: 500px) and (max-width: 800px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+    .getCont {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .centerCont {
+      margin-top: 20%;
+      margin-left: 0%;
+      justify-content: center;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .extensionCont {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .img {
+      background-color: rgb(44, 50, 100);
+      width: 33%;
+      height: 58%;
+      margin-top: 5%;
+    }
+    .extensionCont h1 {
+      color: white;
+  
+      /* font-size: 16px; */
+    }
+  
+    .starter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-left: 3%;
+      margin-bottom: 4%;
+      width: 30%;
+      font-size: 12px;
+      color: white;
+    }
+  
+    .buttoncont {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .but {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      /* padding: 20px 60px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 2%;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .hr {
+      width: 72%;
+      margin-left: 18%;
+    }
+  
+    .end {
+      display: flex;
+      flex-direction: column;
+      justify-content: center !important;
+      align-items: center;
+    }
+    .secondpoint {
+      display: flex;
+      flex-direction: column;
+      width: 35%;
+      height: 30%;
+      margin-left: 7%;
+    }
+  
+    .imgsec {
+      height: 100%;
+      width: 100%;
+    }
+  
+    .secondpoint p {
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 12px;
+    }
+  
+    .image {
+      width: 40%;
+      height: 35%;
+      margin-top: 20%;
+      margin-left: 7%;
+    }
+  }
+  
+  /* media query for tablet view */
+  
+  @media (min-width: 800px) and (max-width: 1050px) {
+    * {
+      background-color: rgb(44, 50, 100);
+    }
+    .getCont {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .centerCont {
+      margin-top: 20%;
+      margin-left: 0%;
+      justify-content: center;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .extensionCont {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .img {
+      background-color: rgb(44, 50, 100);
+      width: 20%;
+      height: 90%;
+    }
+    .extensionCont h1 {
+      color: white;
+  
+      /* font-size: 16px; */
+    }
+  
+    .starter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      margin-left: 3%;
+      margin-bottom: 4%;
+      width: 30%;
+      font-size: 12px;
+      color: white;
+    }
+  
+    .buttoncont {
+      display: flex;
+      flex-direction: row;
+    }
+  
+    .but {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      /* padding: 20px 60px; */
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 10px;
+      margin: 2%;
+      width: 100%;
+      height: 100%;
+    }
+  
+    .hr {
+      width: 52%;
+      margin-left: 27%;
+    }
+  
+    .end {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .secondpoint {
+      display: flex;
+      flex-direction: column;
+      width: 25%;
+      height: 50%;
+    }
+  
+    .imgsec {
+      height: 100%;
+      width: 50%;
+    }
+  
+    .secondpoint p {
+      color: white;
+      width: 60%;
+      text-align: center;
+      font-size: 13px;
+    }
+  
+    .image {
+      width: 20%;
+      height: 60%;
+      margin-top: 4.5%;
+    }
+  }
