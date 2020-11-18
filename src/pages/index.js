@@ -1,75 +1,34 @@
-import React from "react"
-import { graphql, useStaticQuery } from "gatsby"
-import logo from '../assets/WrapLogo.png'
-import SideBar from '../components/SideBar';
-import styles from '../styles/webwrap.module.css';
-import './global.css'
+import React from 'react'
+import { graphql, useStaticQuery } from 'gatsby'
 
-const BASE_URL = process.env.GATSBY_BASE_URL;
-console.log(BASE_URL);
-
-export default function Home() {
-
-  // fetching all query from GraphQL for Index Page
+function index() {
   const data = useStaticQuery(graphql`
-    query MyQuery(
-      $from: Int, 
-      $query: String, 
-      $size: Int, 
-      $sortField: String
-      ) {
-      webwrap {
-        queryFilterableReviews(filter: {
-          excludingReviews: [],
-          mustIncludePicture: true,
-        }, 
-        sortField: $sortField, 
-        size: $size, 
-        query: $query, 
-        from: $from
-        ) {
-          items {
-            content
-            id
-            title
-            picture
-            added
-          }
-          total
-          hasMore
+    query MyQuery {
+  allMarkdownRemark {
+    edges {
+      node {
+        frontmatter {
+          title
+          picture
         }
       }
-    }  
-  `
-  );
+    }
+  }
+}
 
-  console.log(data);
-
+  `)
   return (
     <div>
-      <SideBar />
-      <div>
-        <div  className={styles.container}>
-          <div className={styles.contentBoxes} >
-            {
-              data.webwrap.queryFilterableReviews.items.map((web, index) => {
-                return(
-                  <a style={{textDecoration: "none", color: "white"}} href={`${BASE_URL}/review/${web.id}`}>
-                    <div className={styles.box}> 
-                    {
-                      web.picture === null ? <img src={logo} alt="logo" /> : <img className={styles.img} src={web.picture} alt="pic" />
-                    } 
-                    <div className={styles.centered}>
-                        <h3><span>{web.title}</span></h3> 
-                    </div>
-                    </div>            
-                  </a>
-                )
-              })
-            }
+      {data.allMarkdownRemark.edges.node.map((edge) => {
+        return (
+          <div>
+            <img src={edge.frontmatter.picture} />
+            <h1> {edge.frontmatter.title} </h1>
           </div>
-        </div>
-      </div>
+        )
+      })}
     </div>
   )
-};
+}
+
+export default index
