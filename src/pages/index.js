@@ -23,14 +23,6 @@ export default function Home() {
 //   `)
   return (
     <div>
-      {/* {data.allMarkdownRemark.edges.map((edge) => {
-        return (
-          <div>
-            <img src={edge.node.frontmatter.picture} />
-            <h1> {edge.node.frontmatter.title} </h1>
-          </div>
-        )
-      })} */}
       <Navbar />
       <HeroSection />
       <Cards/> 

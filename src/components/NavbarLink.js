@@ -40,10 +40,10 @@ const NavItem = styled(Link)`
 const NavbarLink = () => {
   return (
     <>
-      <NavItem to="/">About</NavItem>
-      <NavItem to="/404">Services</NavItem>
-      <NavItem to="/">Gallery</NavItem>
-      <NavItem to="/404">Contact</NavItem>
+      <NavItem to="/">Home</NavItem>
+      <NavItem to="/blogs">Blogs</NavItem>
+      <NavItem to="/">Services</NavItem>
+      <NavItem to="/contact">Contact</NavItem>
     </>
   )
 }
