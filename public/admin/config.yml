@@ -16,3 +16,13 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Picture", name: "picture", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - name: "BlogPost"
+    label: "Blogs"
+    folder: "content/blogs"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "blog"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Picture", name: "picture", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}

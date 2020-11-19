@@ -37,7 +37,6 @@ function Cards() {
                             src={edge.node.frontmatter.picture}
                             text={edge.node.frontmatter.title}
                             label='Adventure'
-                            path='/services'
                             />
                         </ul>
                       )
@@ -46,7 +45,7 @@ function Cards() {
         </div>
       </div>
     </div>
-  );
-}
+  )
+};
 
 export default Cards;

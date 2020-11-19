@@ -7,7 +7,7 @@ import video1 from '../videos/video-1.mp4'
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <h1>ADVENTURE AWAITS</h1>
+      <h1>Moments By Lori</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
