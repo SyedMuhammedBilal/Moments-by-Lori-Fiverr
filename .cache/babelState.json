@@ -7,6 +7,19 @@
           "options": {}
         },
         {
+          "name": "babel-plugin-styled-components",
+          "stage": "develop",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": false
+          }
+        },
+        {
           "name": "/Users/syed_.bilal/Desktop/Moments-by-Lori-Fiverr/node_modules/@babel/plugin-proposal-optional-chaining/lib/index.js",
           "options": {}
         },
@@ -52,6 +65,19 @@
         {
           "name": "/Users/syed_.bilal/Desktop/Moments-by-Lori-Fiverr/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "develop-html",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": false
+          }
         }
       ],
       "presets": [
@@ -87,6 +113,19 @@
         {
           "name": "/Users/syed_.bilal/Desktop/Moments-by-Lori-Fiverr/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "build-html",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": true
+          }
         }
       ],
       "presets": [
@@ -122,6 +161,19 @@
         {
           "name": "/Users/syed_.bilal/Desktop/Moments-by-Lori-Fiverr/node_modules/@babel/plugin-proposal-numeric-separator/lib/index.js",
           "options": {}
+        },
+        {
+          "name": "babel-plugin-styled-components",
+          "stage": "build-javascript",
+          "options": {
+            "plugins": [],
+            "displayName": true,
+            "fileName": true,
+            "minify": true,
+            "transpileTemplateLiterals": true,
+            "pure": false,
+            "ssr": true
+          }
         }
       ],
       "presets": [

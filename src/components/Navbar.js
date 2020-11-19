@@ -1,80 +1,123 @@
 import React, { useState, useEffect } from 'react';
 import { Button } from './Button';
-import { Link } from 'gatsby';
-import './Navbar.css';
+import NavbarLinks from "./NavbarLink"
+import Logo from "./Logo"
+import styled from 'styled-components'
+import { Link, navigate} from 'gatsby';
 
-function Navbar() {
-  const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+const Navigation = styled.nav`
+  height: 10vh;
+  display: flex;
+  background-color: black;
+  position: relative;
+  justify-content: space-between;
+  text-transform: uppercase;
+  border-bottom: 2px solid #33333320;
+  margin: 0 auto;
+  padding: 0 5vw;
+  z-index: 2;
+  align-self: center;
 
-  const handleClick = () => setClick(!click);
-  const closeMobileMenu = () => setClick(false);
+  @media (max-width: 768px) {
+    position: sticky;
+    height: 8vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+  }
+`
 
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
+const Toggle = styled.div`
+  display: none;
+  height: 100%;
+  cursor: pointer;
+  background-color: white;
+  color: 'black';
+  padding: 0 10vw;
 
-  useEffect(() => {
-    showButton();
-  }, []);
+  @media (max-width: 768px) {
+    display: flex;
+  }
+`
 
-//   window.addEventListener('resize', showButton);
+const Navbox = styled.div`
+  display: flex;
+  height: 100%;
+  justify-content: flex-end;
+  background-color: black;
+  color: black;
+  align-items: center;
 
-  return (
-    <>
-      <nav className='navbar'>
-        <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-            Moments
-            {/* <i class='fab fa-typo3' /> */}
-          </Link>
-          <div className='menu-icon' onClick={handleClick}>
-            <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
-          </div>
-          <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/services'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Services
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/blogs' 
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Blogs
-              </Link>
-            </li>
+  @media (max-width: 768px) {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+  color: black;
+    justify-content: flex-start;
+    padding-top: 10vh;
+    transition: all 0.3s ease-in;
+    top: 8vh;
+    left: ${props => (props.open ? "-100%" : "0")};
+  }
+`
 
-            <li>
-              <Link
-                to='/sign-up'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Sign Up
-              </Link>
-            </li>
-          </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
-        </div>
-      </nav>
-    </>
-  );
-}
+const Hamburger = styled.div`
+  background-color: #111;
+  width: 30px;
+  height: 3px;
+  transition: all .3s linear;
+  align-self: center;
+  position: relative;
+  transform: ${props => (props.open ? "rotate(-45deg)" : "inherit")};
 
+  ::before,
+  ::after {
+    width: 30px;
+    height: 3px;
+    background-color: #111;
+    content: "";
+    position: absolute;
+    transition: all 0.3s linear;
+  }
+
+  ::before {
+    transform: ${props =>
+      props.open ? "rotate(-90deg) translate(-10px, 0px)" : "rotate(0deg)"};
+    top: -10px;
+  }
+
+  ::after {
+    opacity: ${props => (props.open ? "0" : "1")};
+    transform: ${props => (props.open ? "rotate(90deg) " : "rotate(0deg)")};
+    top: 10px;
+  }
+`
+
+const Navbar = () => {
+    const [navbarOpen, setNavbarOpen] = useState(false)
+  
+    return (
+      <Navigation>
+        <Logo />
+        <Toggle
+          navbarOpen={navbarOpen}
+          onClick={() => setNavbarOpen(!navbarOpen)}
+        >
+          {navbarOpen ? <Hamburger open /> : <Hamburger />}
+        </Toggle>
+        {navbarOpen ? (
+          <Navbox>
+            <NavbarLinks />
+          </Navbox>
+        ) : (
+          <Navbox open>
+            <NavbarLinks />
+          </Navbox>
+        )}
+      </Navigation>
+    )
+  }
+  
 export default Navbar;
